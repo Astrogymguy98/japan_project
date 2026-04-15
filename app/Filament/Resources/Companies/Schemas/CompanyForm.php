@@ -6,7 +6,7 @@ namespace App\Filament\Resources\Companies\Schemas;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Repeater;
-use Filament\Schemas\Components\Section as ComponentsSection;
+use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 
 
@@ -17,7 +17,7 @@ class CompanyForm
 
         return $schema
             ->schema([
-               ComponentsSection::make('Company Info')
+               Section::make('Company Info')
                     ->columnSpanFull()
                     ->columns(2)
                     ->schema([
@@ -35,7 +35,7 @@ class CompanyForm
                     ]),
 
                 // Keep these inside the main schema array
-             ComponentsSection::make('Social Media')
+             Section::make('Social Media')
              ->columnSpanFull()
              ->columns(2)
              ->schema([
