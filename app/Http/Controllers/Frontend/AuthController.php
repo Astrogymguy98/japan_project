@@ -36,5 +36,6 @@ class AuthController extends Controller
 
         Auth::login($new_user);
         return redirect()->route('home');
+        
     }
 }
