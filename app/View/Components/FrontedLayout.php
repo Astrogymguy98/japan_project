@@ -21,6 +21,6 @@ class FrontedLayout extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.fronted-layout');
+        return view('components.frontend-layout');
     }
 }

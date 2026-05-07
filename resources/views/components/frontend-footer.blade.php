@@ -1,1 +1,3 @@
-footer code
+<footer>
+    
+</footer>
